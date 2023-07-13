@@ -168,87 +168,77 @@ function clearScores() {
   document.getElementById("clearScores").classList.add("hide");
 }
 
-/////
-//Questions go Here
-/////
+
+//Questions
 const questions = [
   {
-    question: "Inside which HTML element do we put the JavaScript?",
+    question: "How do we denote multiple words in JavaScript?",
     answers: [
-      { text: "javascript", correct: false },
-      { text: "script", correct: true },
-      { text: "js", correct: false },
-      { text: "jQuery", correct: false }
+      { text: "spaces", correct: false },
+      { text: "camelCase", correct: true },
+      { text: "underscores", correct: false },
+      { text: "hyphens", correct: false }
     ]
   },
   {
-    question: "Where is the correct place to insert JavaScript?",
+    question: "What variable cannot be changed?",
     answers: [
-      { text: "The Head Section", correct: false },
-      { text: "The Body Section", correct: false },
-      { text: "In an External File", correct: false },
-      { text: "All of the Above", correct: true }
+      { text: "let", correct: false },
+      { text: "var", correct: false },
+      { text: "bet", correct: false },
+      { text: "const", correct: true }
     ]
   },
   {
-    question: "The external JavaScript file must contain the script tag.",
+    question: "What do Double Ampersands (&&) mean in a statement?",
     answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true }
+      { text: "Either side of the statement can be true.", correct: false },
+      { text: "Both sides of the statement must be true.", correct: true }
     ]
   },
   {
-    question: 'How do you write "Hello World" in an alert box?',
+    question: "How do we denote an array in JS",
     answers: [
-      { text: 'msg("Hello World");', correct: false },
-      { text: 'prompt("Hello World");', correct: false },
-      { text: 'alertBox("Hello World");', correct: false },
-      { text: 'alert("Hello World");', correct: true }
+      { text: "(Parentheses)", correct: false },
+      { text: "{Curly Brackets}", correct: false },
+      { text: "<Angle Brackets>", correct: false },
+      { text: "[Square Brackets]", correct: true }
     ]
   },
   {
-    question: "How do you create a function in JavaScript?",
+    question: "How to we save inputs to the localStorage?",
     answers: [
-      { text: "function myFunction()", correct: true },
-      { text: "function = myFunction()", correct: false },
-      { text: "make.function.myFunction()", correct: false },
-      { text: "function:myFunction()", correct: false }
+      { text: "localStorage.setItem()", correct: true },
+      { text: "localStorage.saveItem()", correct: false },
+      { text: "localStorage.getItem()", correct: false },
+      { text: "const localStorage = setItem()", correct: false }
     ]
   },
   {
-    question: 'How do you call a function named "myFunction"?',
+    question: "Which statement is True?",
     answers: [
-      { text: "call myFunction()", correct: false },
-      { text: "read myFunction()", correct: false },
-      { text: "myFunction()", correct: true },
-      { text: "run.myFunction()", correct: false }
+      { text: "Dog ==='dog'", correct: false },
+      { text: "5 === Five", correct: false },
+      { text: "1000 === (500*2)", correct: true },
+      { text: "A Ton of Bricks > A Ton of Feathers", correct: false }
     ]
   },
   {
-    question: "How do you write an IF statement in JavaScript?",
+    question: "How do you display the full name of the month in dayjs?",
     answers: [
-      { text: "if (i === 5)", correct: true },
-      { text: "if i = 5 then", correct: false },
-      { text: "if i === 5 then", correct: false },
-      { text: "if (i = 5)", correct: false }
+      { text: "MMMM", correct: true },
+      { text: "MM", correct: false },
+      { text: "M", correct: false },
+      { text: "MMM", correct: false }
     ]
   },
   {
-    question: "!= means what in javascript?",
+    question: "Who's the best Captain?",
     answers: [
-      { text: "Or", correct: false },
-      { text: "And", correct: false },
-      { text: "Plus and Equal To", correct: false },
-      { text: "Not Equal To", correct: true }
-    ]
-  },
-  {
-    question: "What Characters Contains an Array?",
-    answers: [
-      { text: "< >", correct: false },
-      { text: "{ }", correct: false },
-      { text: "[ ]", correct: true },
-      { text: "# #", correct: false }
+      { text: "Captain Hook", correct: false },
+      { text: "Admiral Horatio Nelson", correct: false },
+      { text: "Captain Kangaroo", correct: false },
+      { text: "Captain Jean-Luc Picard", correct: true }
     ]
   }
 ];

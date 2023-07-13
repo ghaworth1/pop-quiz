@@ -1,0 +1,13 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.mainHeader{
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+#timerArea{
+  color: red;
+}
